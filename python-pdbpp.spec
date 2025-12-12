@@ -3,7 +3,7 @@
 
 Name:		python-pdbpp
 Version:	0.10.3
-Release:	1
+Release:	2
 Summary:	PDB++, a drop-in replacement for pdb
 URL:		https://github.com/pdbpp/pdbpp
 License:	BSD-3-Clause
