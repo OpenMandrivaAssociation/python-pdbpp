@@ -2,7 +2,7 @@
 %bcond_without test
 
 Name:		python-pdbpp
-Version:	0.12.0
+Version:	0.12.0.post1
 Release:	1
 Summary:	PDB++, a drop-in replacement for pdb
 # Upstream was forked to continue package maintenance, this is the new upstream URL
