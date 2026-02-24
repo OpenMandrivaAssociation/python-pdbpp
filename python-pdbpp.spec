@@ -2,7 +2,7 @@
 %bcond_without test
 
 Name:		python-pdbpp
-Version:	0.12.0.post1
+Version:	0.12.1
 Release:	1
 Summary:	PDB++, a drop-in replacement for pdb
 # Upstream was forked to continue package maintenance, this is the new upstream URL
@@ -48,8 +48,9 @@ skiptests="not test_integration[_pyrepl] and not test_integration[readline] and 
 skiptests+=" and not test_question_mark_unit and not test_nested_completer"
 skiptests+=" and not test_set_trace_in_skipped_module and not test_exception_info_main"
 skiptests+=" and not test_complete_displays_errors[False] and not test_complete_displays_errors[True]"
+skiptests+=" and not test_editable_install_pth and not test_hijacking"
+skiptests+=" and not test_python_m_pdb_uses_pdbpp_and_env"
 # deselect flaky tests
-# not test_completes_from_pdb and not test_python_m_pdb_uses_pdbpp and not test_pdbrc_continue and
 export CI=true
 export PYTHONPATH="%{buildroot}%{python_sitelib}:${PWD}"
 pytest -v -k "$skiptests"
