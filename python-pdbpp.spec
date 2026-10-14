@@ -3,7 +3,7 @@
 
 Name:		python-pdbpp
 Version:	0.12.1
-Release:	1
+Release:	2
 Summary:	PDB++, a drop-in replacement for pdb
 # Upstream was forked to continue package maintenance, this is the new upstream URL
 URL:		https://github.com/bretello/pdbpp
